@@ -6,6 +6,7 @@ LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
   $scope.message = "";
   $scope.calculateMenu = function () {
+    $scope.menu = "";
     var menuVal = $scope.menu;
     if (menuVal == "") {
       $scope.message = "Please enter data first";
